@@ -190,13 +190,27 @@ body {
 .header-container nav a:hover {
   font-weight: bold;
 }
+@media (max-width: 500px) {
+  .header-container {
+    padding-top: 72px;
+  }
+  .header-container img {
+    width: 300px;
+  }
+  .header-container img:hover {
+    opacity: 1;
+  }
+  .header-container nav a {
+    text-decoration: none;
+  }
+}
 .main-container {
   font-family: 'Courier New', Courier, monospace;
   background-color: rgba(200, 200, 200, 0.8);
   border-radius: 20px;
   display: flex;
   flex-direction: column;
-  margin: 72px;
+  margin: 180px;
   margin-top: 14px;
 }
 .main-container div {
@@ -210,6 +224,14 @@ body {
 .main-container div p {
   font-size: 1.5em;
 }
+@media (max-width: 500px) {
+  .main-container {
+    margin: 36px;
+  }
+  .main-container div {
+    padding: 36px;
+  }
+}
 .port-content img {
   display: inline;
   text-align: center;
@@ -217,7 +239,24 @@ body {
   border-radius: 20px;
   width: 400px;
 }
+@media (max-width: 500px) {
+  .port-content img {
+    height: 100px;
+    width: 100px;
+  }
+}
 .cont-content ul {
   font-size: 1.5em;
   line-height: 1.6;
+}
+.cont-content li:hover {
+  font-weight: bold;
+}
+@media (max-width: 500px) {
+  .cont-content li {
+    text-align: center;
+  }
+  .cont-content li:hover {
+    font-weight: 100;
+  }
 }

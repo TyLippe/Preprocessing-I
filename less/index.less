@@ -119,6 +119,20 @@ body {
 			font-weight: bold;
 		}
 }
+@media(max-width: 500px) {
+	padding-top: 72px;
+	img {
+		width: 300px;
+	}
+	img:hover {
+		opacity: 1;
+	}
+	nav {
+		a {
+			text-decoration: none;
+		}
+	}
+}
 }
 .main-container {
 	font-family: @font;
@@ -126,7 +140,7 @@ body {
 	border-radius: 20px;
 	display: flex;
 	flex-direction: column;
-	margin: 72px;
+	margin: 180px;
 	margin-top: 14px;
 	div {
 		padding: 120px;
@@ -139,6 +153,12 @@ body {
 			font-size: @text-medium;
 		}
 	}
+	@media(max-width: 500px) {
+		margin: 36px;
+		div{
+			padding: 36px;
+		}
+	}
 }
 .port-content { 
 	img {
@@ -148,10 +168,27 @@ body {
 		border-radius: 20px;
 		width: 400px;
 	}
+	@media(max-width: 500px) {
+		img {
+		height: 100px;
+		width: 100px;
+		}
+	}
 }
 .cont-content {
 	ul{	
 	font-size: @text-medium;
 	line-height: 1.6;
+	}
+	li:hover {
+		font-weight: bold;
+	}
+	@media(max-width: 500px) {
+		li {
+			text-align: center;
+		}
+		li:hover {
+			font-weight: 100;
+		}
 	}
 }
